@@ -14,7 +14,7 @@
   docker run --rm -v $(PWD):/app -w /app -it pact_broker:dev bash
   ```
   
-  If you wish to access the Pact Broker from the container's host OS, include `-p 9292:9292` in the `docker run` command to open that port to the host OS. 
+  If you wish to access the Pact Broker from the container's host OS, include `-p 9292:9292` in the `docker run` command to open that port to the host OS.  
   If you wish to expose the application using a different port, you can replace the second `9292` with a different valid port number
 
 ### With native install
