@@ -33,7 +33,7 @@
   bundle install
   bundle exec rackup
   ```
-* If you wish to access the application from outside the container, append `-o 0.0.0.0` to the `rackup` command.
+  If you wish to access the application from outside the container, append `-o 0.0.0.0` to the `rackup` command.
 * The application will be available on `http://localhost:9292`
 
 ## Running the tests
