@@ -14,7 +14,8 @@
   docker run --rm -v $(PWD):/app -w /app -it pact_broker:dev bash
   ```
   
-  If you wish to access the Pact Broker from the container's host, include `-p 9292:9292` to open that port to the host OS. If you wish to expose it using a different port, you can replace the second `9292` with a different valid port number
+  If you wish to access the Pact Broker from the container's host OS, include `-p 9292:9292` in the `docker run` command to open that port to the host OS. 
+  If you wish to expose the application using a different port, you can replace the second `9292` with a different valid port number
 
 ### With native install
 
@@ -32,8 +33,8 @@
   bundle install
   bundle exec rackup
   ```
-* The application will be available on `http://localhost:9292`
 * If you wish to access the application from outside the container, append `-o 0.0.0.0` to the `rackup` command.
+* The application will be available on `http://localhost:9292`
 
 ## Running the tests
 
